@@ -56,7 +56,7 @@ p{
     background-position: center;
     background-attachment: fixed; /* allows the background image to stay fixed while scrolling */
     height: 100vh;
-    margin: 0;
+    padding: 0 120px;
     text-align: center;
     display: flex;
     align-items: center;

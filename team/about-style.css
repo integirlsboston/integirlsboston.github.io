@@ -32,7 +32,7 @@ main-body {
 }
 
 /* heading styles */
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: var(--header-font);
     font-weight: 700;
 }
@@ -100,7 +100,11 @@ h1, h2, h3 {
     margin-top: 1rem;
     color: var(--primary-color);
 }
-
+.team-member h4 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--secondary-color);
+}
 .team-member p {
     font-size: 0.9rem;
     line-height: 1.4;

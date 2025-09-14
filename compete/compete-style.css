@@ -24,7 +24,7 @@ body {
 h1, h2, h3 {
     font-family: var(--header-font);
     font-weight: 700;
-    margin: 10px 0 0 0; /* maybe this could be changed elsewhere? */
+    margin: 10px 0 0 0;
 }
 
 h1 {
