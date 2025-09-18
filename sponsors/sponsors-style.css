@@ -47,7 +47,11 @@ p{
 
 /*homepage css:*/
 .hero {
-    background-image: url('https://img.freepik.com/free-vector/sunset-city-background_1092-42.jpg'); /* replace with your chapter's background image */
+    background-image: url("../cover.png");
+    background-color: rgba(0, 0, 0, 0.5); /* The black tint layer */
+    background-blend-mode: multiply; /* Blends the color and image */
+    background-color: rgba(0, 0, 0, 0.5); /* The black tint layer */
+    background-blend-mode: multiply; /* Blends the color and image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* allows the background image to stay fixed while scrolling */
@@ -57,7 +61,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--dark-color);
+    color: var(--white-color);
 }
 
 /* animating fade-in title */
@@ -77,7 +81,7 @@ p{
 .sponsor-section {
     width: 100vw;
     padding: 4rem 0;
-    background-color: #ffe6ea;
+    background-color: var(--light-color);
     box-sizing: border-box;
 }
 
@@ -93,8 +97,8 @@ p{
     color: #c0c0c0;
 }
 
-.sponsor-section.gold h2 {
-    color: #d4af37;
+.sponsor-section.main h2 {
+    color: #000000;
 }
 
 .sponsor-section.silver h2 {
