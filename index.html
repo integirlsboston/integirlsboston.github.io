@@ -4,6 +4,7 @@
     <title>INTEGIRLS Boston/Concord</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     
     <!--<link rel="icon" type="image/x-icon" href="header-footer/ig_logo.jpg">-->
     <link rel="icon" type="image.png" href="intlogo.png">
@@ -27,24 +28,36 @@
     <div class="main-body">
         <!-- Header -->
         <div class="top-bar">
-            <table style="width: 100%;">
-                <tr>
-                    <td style="text-align: left;">
-                        <img src="../intlogo.png" alt="Logo" class="header-logo">
-                        <span><b>INTEGIRLS Boston & Concord</b></span>
-                    </td>
-                    <td style="text-align: right;">
-                        <a href="index.html">Home</a> |
-                        <a href="compete/index.html">Compete</a> |
-                        <a href="https://www.integirls.org/math-competitions">Past Contests</a> | <!-- links to integirls website for now-->
-                        <a href="sponsors/index.html">Sponsors</a> |
-                        <a href="donate/index.html">Donate</a> |
-                        <a href="team/index.html">Our Team</a> |
-                        <a href="https://www.integirls.org/"  target="_blank">INTEGIRLS</a>
-                    </td>
-                </tr>
-            </table>
+            <div class="header-left">
+                <img src="../intlogo.png" alt="Logo" class="header-logo">
+                <span><b>INTEGIRLS Boston & Concord</b></span>
+            </div>
+            <button class="hamburger" id="hamburger-menu" aria-label="Open navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="compete/index.html">Compete</a>
+                <a href="https://www.integirls.org/math-competitions">Past Contests</a>
+                <a href="sponsors/index.html">Sponsors</a>
+                <a href="donate/index.html">Donate</a>
+                <a href="team/index.html">Our Team</a>
+                <a href="https://www.integirls.org/"  target="_blank">INTEGIRLS</a>
+            </nav>
         </div>
+        <script>
+        // Hamburger menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger-menu');
+            const navLinks = document.getElementById('nav-links');
+            hamburger.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+        });
+        </script>
 
         <main>
             <section class="hero">
@@ -91,7 +104,7 @@
                     <tr>
                         <td style="padding-left: 20px; padding-right: 20px; text-align: left;">
                             <h4>How can I contribute?</h4><br>
-                            You can donate to our non-profit <a href="https://integirls.github.io/donate/index.html">here</a>. You can also email us at <a href="mailto:boston@integirls.org">boston@integirls.org</a> to receive more information about how you can help!
+                            You can donate to our non-profit <a href="donate/">here</a>. You can also email us at <a href="mailto:boston@integirls.org">boston@integirls.org</a> to receive more information about how you can help!
                         </td>
                         <td style="padding-left: 20px; padding-right: 20px; text-align: left;">
                             <h4>How many competitions will you conduct throughout the year?</h4><br>
