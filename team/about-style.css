@@ -37,6 +37,10 @@ h1, h2, h3, h4 {
     font-weight: 700;
 }
 
+h1 {
+    font-size: 5.5rem;
+}
+
 /* about page stuff -- u can change the url of the photo depending on what you want the header to be */
 
 .about-hero {

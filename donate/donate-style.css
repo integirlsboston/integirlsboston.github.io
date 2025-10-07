@@ -42,6 +42,8 @@ main-body {
 
 h1 {
     font-family: var(--header-font);
+    font-size: 5.5rem;
+    font-weight: 700;
 }
 
 p {
