@@ -26,32 +26,43 @@
     <div class="main-body">
         <!-- Header -->
         <div class="top-bar">
-            <table style="width: 100%;">
-                <tr>
-                    <td style="text-align: left;">
-                        <span style="line-height: 1"><b>  </b></span>
-                        <img src="../intlogo.png" alt="Logo" class="header-logo">
-                        <span style="line-height: 1"><b>INTEGIRLS Boston & Concord</b></span>
-                    </td>
-                    <td style="text-align: right;">
-                        <a href="../index.html">Home</a> |
-                        <a href="../compete/index.html">Compete</a> |
-                        <a href="https://www.integirls.org/math-competitions">Past Contests</a> | <!-- links to integirls website for now-->
-                        <a href="../sponsors/index.html">Sponsors</a> |
-                        <a href="../donate/index.html">Donate</a> |
-                        <a href="index.html">Our Team</a> |
-                        <a href="https://www.integirls.org/"  target="_blank">INTEGIRLS</a>
-                    </td>
-                </tr>
-            </table>
+            <div class="header-left">
+                <img src="../intlogo.png" alt="Logo" class="header-logo">
+                <span><b>INTEGIRLS Boston & Concord</b></span>
+            </div>
+            <button class="hamburger" id="hamburger-menu" aria-label="Open navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../compete/index.html">Compete</a>
+                <a href="https://www.integirls.org/math-competitions">Past Contests</a>
+                <a href="../sponsors/index.html">Sponsors</a>
+                <a href="../donate/index.html">Donate</a>
+                <a href="../team/index.html">Our Team</a>
+                <a href="https://www.integirls.org/"  target="_blank">INTEGIRLS</a>
+            </nav>
         </div>
-        <main>
-            <section class="about-hero">
-                <div class="container">
-                    <h1 class="fade-in">Our Team</h1>
-                </div>
-            </section>
+        <script>
+        // Hamburger menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger-menu');
+            const navLinks = document.getElementById('nav-links');
+            hamburger.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+        });
+        </script>
 
+        <section class="about-hero">
+            <div class="container">
+                <h1 class="fade-in">Our Team</h1>
+            </div>
+        </section>
+           
             <div class="container">
                 <section class="team-section">
                     <div class="team-grid">
@@ -95,19 +106,19 @@
 </p>
                         </div>
                         <div class="team-member">
-                            <img src="" alt="Carolyn">
+                            <img src="" alt="">
                             <h3>Carolyn Cao</h3>
                             <p></p>
                         </div>
                         <div class="team-member">
-                            <img src="" alt="Alice">
-                            <h3>Alice</h3>
+                            <img src="" alt="">
+                            <h3>Alice Yin</h3>
                             <p></p>
                         </div>
                         </div>
                 </section>
             </div>
-        </main>
+        </section>
 
         <!-- Footer -->
         <div class="footer">

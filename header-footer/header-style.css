@@ -1,33 +1,237 @@
-/* header css: */
-body {
-    margin: 0;
+/* Part of the following is from the about section (global css):*/
+:root {
+    --primary-color: #5e4d9e;
+    --dark-color: #2c1b2d;
+    --light-color: #C69AA4;
+    --notsolight-color: #B58A94;
+    --white-color: #ffffff;
+    --header-font: 'Montserrat', sans-serif;
+    --body-font: 'Lato', sans-serif;
+    margin: 0 auto;
+    padding: 0 0px;
 }
 
-/* to keep the header at the top of the page we have to make all the main content of the pages have a margin-top of 9vh
-   if you guys have a better solution feel free to change the code cus i am suck at css and i HATE IT!!!
-*/
+/* body styles */
+body {
+    font-family: var(--body-font);
+    background-color: var(--white-color);
+    margin: 0;
+    color: var(--dark-color);
+    line-height: 1.6;
+    overscroll-behavior: none;
+}
 
-.header {
+.main-body {
+    padding-top: 9vh;
+}
+
+/* heading styles */
+h1, h2, h3, h4 {
+    font-family: var(--header-font);
+    font-weight: 50rem;
+    margin: 1rem 1rem 0 0; /* maybe this could be changed elsewhere? */
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2, h3 {
+    font-size: 2rem;
+}
+
+.faquestion {
+    font-family: var(--header-font);
+    font-size: 1.1rem;
+    text-align: left;
+    text-align: left;
+}
+details {
+    align-items: left;
+}
+
+summary {
+    font-weight: bold;
+    padding: 0.75rem 0;
+}
+p{
+    font-size: 1rem;
+}
+
+/*homepage css:*/
+.hero {
+    background-image: url("cover.png");
+    background-color: rgba(0, 0, 0, 0.5); /* The black tint layer */
+    background-blend-mode: multiply; /* Blends the color and image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* allows the background image to stay fixed while scrolling */
+    height: 100vh;
+    padding: 0 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+}
+
+.mission{
+    background-color: var(--light-color);
+    text-align: center;
+    padding: 10px 80px;
+}
+
+.faq{
+    background-color: var(--light-color);
+    text-align: left;
+    padding: 10px 40px;
+}
+
+.long-announcement {
+    background-color: var(--white-color);
+    text-align: center;
+    padding: 10px 40px;
+}
+
+/* animating fade-in title */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header styles */
+.top-bar {
     position: fixed;
     width: 100%;
+    z-index: 9999;
+    height: 80px;
+    background: #b5d0ff;
+    font-size: 20px;
+    color: black;
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: space-between;
     align-items: center;
-    height: 9vh;
-    text-align: center;
-    background-color: pink; /* changes the color of the header box */
+    padding: 0 30px;
+    box-sizing: border-box;
 }
 
-.header p {
-    color: black; /* changes the color of the text inside the header */
+/* Logo styling for circular appearance */
+.header-logo {
+    height: 50px;
+    object-fit: cover; 
+    vertical-align: middle;
 }
 
-.header button {
-    padding: 10px 30px;
-    background-color: pink; /* changes the color of the button */
-    color: black; /* changes the color of the text inside the button */
-    border-radius: 5px;
-    border-width: 1px;
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hamburger styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
     cursor: pointer;
+    z-index: 10001;
+}
+.hamburger .bar {
+    width: 28px;
+    height: 4px;
+    background-color: #2c1b2d;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Hamburger animation when active */
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #b5d0ff;
+        flex-direction: column;
+        width: 100vw;
+        max-width: 300px;
+        align-items: flex-start;
+        padding: 20px 30px 20px 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 10000;
+        gap: 20px;
+        border-radius: 0 0 0 16px;
+    }
+    .nav-links.active {
+        transform: translateX(0);
+    }
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Footer styles */
+.footer {
+    background: #091a5c;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    line-height: 1.5;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.footer a {
+    color: #FF5722;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    color: #E91E63;
 }

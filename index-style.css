@@ -29,7 +29,7 @@ body {
 h1, h2, h3, h4 {
     font-family: var(--header-font);
     font-weight: 50rem;
-    margin: 10px 0 0 0; /* maybe this could be changed elsewhere? */
+    margin: 1rem 1rem 0 0; /* maybe this could be changed elsewhere? */
 }
 
 h1 {
@@ -40,11 +40,20 @@ h2, h3 {
     font-size: 2rem;
 }
 
-h4 {
-    font-size: 1.5rem;
+.faquestion {
+    font-family: var(--header-font);
+    font-size: 1.1rem;
+    text-align: left;
     text-align: left;
 }
+details {
+    align-items: left;
+}
 
+summary {
+    font-weight: bold;
+    padding: 0.75rem 0;
+}
 p{
     font-size: 1rem;
 }
@@ -58,7 +67,7 @@ p{
     background-position: center;
     background-attachment: fixed; /* allows the background image to stay fixed while scrolling */
     height: 100vh;
-    padding: 0 120px;
+    padding: 0 12px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -74,14 +83,14 @@ p{
 
 .faq{
     background-color: var(--light-color);
-    text-align: center;
-    padding: 10px 80px;
+    text-align: left;
+    padding: 10px 40px;
 }
 
 .long-announcement {
     background-color: var(--white-color);
     text-align: center;
-    padding: 10px 80px;
+    padding: 10px 40px;
 }
 
 /* animating fade-in title */
