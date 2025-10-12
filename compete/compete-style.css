@@ -28,8 +28,9 @@
     --dark-color: #2c1b2d;
     --light-color: #955b68;
     --white-color: #ffffff;
-    --header-font: 'Montserrat', sans-serif;
-    --body-font: 'Lato', sans-serif;
+    --header-font: 'Playfair Display', serif;
+    --body-font: 'Playfair Display', serif;
+    --font-weight: 400;
     margin: 0 auto;
     padding: 0 0px;
 }
@@ -54,13 +55,19 @@ h1 {
     font-size: 5.2rem;
 }
 
-h2, h3 {
-    font-size: 1rem;
-    font-weight: 100;
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-weight: bold;
 }
 
 p{
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .upcoming{
@@ -82,7 +89,9 @@ p{
     gap: 10px;
     padding: 10px 5vw;
 }
-
+.compformat {
+    padding: 20px 5vw;
+}
 .slider img {
     height: 285px;
     flex: 0 0 auto;

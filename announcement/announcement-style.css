@@ -7,8 +7,8 @@
     --light-color: #C69AA4;
     --notsolight-color: #B58A94;
     --white-color: #ffffff;
-    --header-font: 'Montserrat', sans-serif;
-    --body-font: 'Lato', sans-serif;
+    --header-font: 'Playfair Display', serif;
+    --body-font: 'Playfair Display', serif;
     margin: 0 auto;
     padding: 0 0px;
 }
@@ -33,13 +33,17 @@ body {
 
 .announcement p {
     color: black; /* changes the color of the text inside the header */
+    font-weight: bold;
+    font-family: var(--body-font);
+    font-size: 1.2rem
+    ;
 }
 
 .announcement button {
     padding: 10px 30px;
-    background-color: pink; /* changes the color of the button */
-    color: black; /* changes the color of the text inside the button */
-    border-radius: 5px;
+    background-color: rgb(165, 16, 41); /* changes the color of the button */
+    color: rgb(153, 0, 0); /* changes the color of the text inside the button */
+    border-radius: 0px;
     border-width: 1px;
     cursor: pointer;
 }

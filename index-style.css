@@ -5,8 +5,8 @@
     --light-color: #C69AA4;
     --notsolight-color: #B58A94;
     --white-color: #ffffff;
-    --header-font: 'Montserrat', sans-serif;
-    --body-font: 'Lato', sans-serif;
+    --header-font: 'Playfair Display', serif;
+    --body-font: 'Playfair Display', serif;
     margin: 0 auto;
     padding: 0 0px;
 }
@@ -28,21 +28,22 @@ body {
 /* heading styles */
 h1, h2, h3, h4 {
     font-family: var(--header-font);
-    font-weight: 50rem;
+    font-weight: 600; 
     margin: 1rem 1rem 0 0; /* maybe this could be changed elsewhere? */
 }
 
 h1 {
-    font-size: 4.5rem;
+    font-size: 5rem;
+    font-weight: bold;
 }
 
 h2, h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .faquestion {
     font-family: var(--header-font);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     text-align: left;
     text-align: left;
 }
@@ -56,6 +57,7 @@ summary {
 }
 p{
     font-size: 1rem;
+    font-weight: 500;
 }
 
 /*homepage css:*/

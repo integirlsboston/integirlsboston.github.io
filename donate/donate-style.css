@@ -5,8 +5,8 @@
     --light-color: #C69AA4;
     --notsolight-color: #B58A94;
     --white-color: #ffffff;
-    --header-font: 'Montserrat', sans-serif;
-    --body-font: 'Lato', sans-serif;
+    --header-font: 'Playfair Display', serif;
+    --body-font: 'Playfair Display', serif;
     margin: 0 auto;
     padding: 0 0px;
 }

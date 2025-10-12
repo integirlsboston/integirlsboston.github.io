@@ -16,8 +16,9 @@
             --light-color: #C69AA4;
             --notsolight-color: #B58A94;
             --white-color: #ffffff;
-            --header-font: 'Montserrat', sans-serif;
-            --body-font: 'Lato', sans-serif;
+            --header-font: 'Playfair Display', serif;
+            --body-font: 'Playfair Display', serif;
+            --font-weight: 700;
             margin: 0 auto;
             padding: 0 0px;
         }
@@ -40,20 +41,24 @@
             z-index: 9999;
         }
 
-        .announcement span {
+        .announcement p {
             color: black;
-
+            font-size: 1.1rem;
+            font-weight: 650;
             margin: 0;
             padding: 0;
         }
 
         .announcement button {
-            padding: 10px 30px;
-            background-color: pink; /* changes the color of the button */
+            padding: 7px 10px;
+            background-color: rgb(194, 170, 207); /* changes the color of the button */
             color: black; /* changes the color of the text inside the button */
-            border-radius: 5px;
-            border-width: 1px;
+            border-radius: 3px;
+            border: 1px solid black;
             cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            font-family: var(--body-font);
         }
     </style>
 </head>
@@ -61,12 +66,12 @@
 
     <div class="announcement">
         <span>
-            <b> 2025 Fall Competition Information Coming Soon! </b>
+            <p>REGISTER NOW FOR OUR 2025 FALL COMPETITION!</p>
         </span>
         <!-- insert the link of whatever you want the button to lead to, like a competition registration form -->
-        <!-- <a href="">
+        <a href="https://forms.gle/5ZbEvdXbSsf5ysLS6">
             <button>REGISTER</button>
-        </a> -->
+        </a>
     </div>
 </body>
 </html>
