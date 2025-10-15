@@ -88,6 +88,10 @@ p{
     height: 70vh;
     padding: 0 6px;
   }
+  .top-bar
+    {
+        padding: 0 8px;
+    }
 }
 
 .mission{
