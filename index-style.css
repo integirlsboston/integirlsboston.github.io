@@ -132,6 +132,7 @@ p{
     font-size: 20px;
     color: black;
     display: flex;
+    align-items: flex-start;
     gap: 20px 0px;
     justify-content: space-between;
     align-items: center;
@@ -142,11 +143,15 @@ p{
 /* Logo styling for circular appearance */
 .header-logo {
     height: 50px;
+    width: 50px;
     object-fit: cover; 
     flex-shrink: 0; /* prevents logo from shrinking */
     vertical-align: middle;
 }
-
+.header-left {
+  flex: 1;
+  min-width: 0; /* Allows text to wrap within this container */
+}
 
 .nav-links {
     display: flex;
