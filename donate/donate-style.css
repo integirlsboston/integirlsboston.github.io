@@ -39,6 +39,18 @@ main-body {
     justify-content: center;
     color: var(--white-color);
 }
+@media (max-width: 700px) {
+  .donate-hero h1 {
+    font-size: 2.4rem;      /* Smaller text on mobile */
+  }
+  .donate-hero {
+    background-position: center top; /* Show more of the image's top */
+    background-size: 200% auto;        /* Prevents zooming/cropping */
+    background-repeat: no-repeat;
+    height: 50vh;
+    padding: 0 6px;
+  }
+}
 
 h1 {
     font-family: var(--header-font);

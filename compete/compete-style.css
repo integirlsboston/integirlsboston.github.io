@@ -19,7 +19,22 @@
     justify-content: center;
     color: #ffffff;
 }
-
+@media (max-width: 700px) {
+  .hero h1 {
+    font-size: 2.4rem;      /* Smaller text on mobile */
+  }
+  .hero {
+    background-position: center top; /* Show more of the image's top */
+    background-size: 200% auto;        /* Prevents zooming/cropping */
+    background-repeat: no-repeat;
+    height: 50vh;
+    padding: 0 6px;
+  }
+  .top-bar
+    {
+        padding: 0 8px;
+    }
+}
 
 
 /* Part of the following is from the about section (global css):*/

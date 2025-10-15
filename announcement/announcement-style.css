@@ -24,7 +24,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.6rem;
     align-items: center;
     height: 9vh;
     text-align: center;
@@ -40,7 +40,7 @@ body {
 }
 
 .announcement button {
-    padding: 10px 30px;
+    padding: 10px 10px;
     background-color: rgb(165, 16, 41); /* changes the color of the button */
     color: rgb(153, 0, 0); /* changes the color of the text inside the button */
     border-radius: 0px;
