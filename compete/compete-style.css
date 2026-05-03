@@ -88,13 +88,13 @@ p{
 .upcoming {
     background-color: var(--light-color);
     text-align: center;
-    padding: 0px 30px 12px 30px;
+    padding:50px 30px 62px 30px;
     display: flex;
     align-items: center;    /* vertical centering */
     justify-content: center; /* horizontal centering */
     box-sizing: border-box;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 20;
+    margin-bottom: 20;
 }
 
 .slider{
