@@ -41,6 +41,11 @@ h1 {
     font-size: 5.5rem;
 }
 
+h4 {
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
 /* about page stuff -- u can change the url of the photo depending on what you want the header to be */
 
 .about-hero {
@@ -127,4 +132,16 @@ h1 {
     font-size: 1rem;
     line-height: 1.4;
     color: #302828;
+}
+.join {
+    background-color: rgb(141, 111, 154); /* changes the color of the header box */;
+    color: black;
+    text-align: center;
+    padding:5px 30px 5px 30px;
+    line-height: 0.7;
+    align-items: center;    /* vertical centering */
+    justify-content: center; /* horizontal centering */
+    box-sizing: border-box;
+    margin-top: 5;
+    margin-bottom: 5;
 }
