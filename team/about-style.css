@@ -138,7 +138,7 @@ h4 {
     color: black;
     text-align: center;
     padding:5px 30px 5px 30px;
-    line-height: 0.7;
+    line-height: 1;
     align-items: center;    /* vertical centering */
     justify-content: center; /* horizontal centering */
     box-sizing: border-box;
