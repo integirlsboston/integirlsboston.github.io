@@ -137,3 +137,34 @@ p{
     transform: translateY(0);
   }
 }
+/* competition day schedule table */
+.schedule {
+    padding: 20px 5vw;
+}
+.schedule table {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    margin: 10px 0 20px 0;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.schedule th {
+    background-color: #E5C8D3;
+    font-weight: bold;
+}
+.schedule th, .schedule td {
+    border: 2px solid var(--dark-color);
+    padding: 8px 10px;
+}
+.schedule td {
+    background-color: #F5F5F5;
+}
+@media (max-width: 700px) {
+  .schedule table {
+    font-size: 0.95rem;
+  }
+  .schedule th, .schedule td {
+    padding: 6px 4px;
+  }
+}
